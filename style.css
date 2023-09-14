@@ -1,0 +1,53 @@
+:root{
+    --light-blue: #1565c0;
+    --dark-blue: #0D47A1;
+}
+
+*{
+    font-family: Noto Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2{
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 5%;
+}
+
+p{
+    text-align: justify;
+}
+
+#sections{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#sections p{
+    text-align: justify;
+}
+
+.lista-ordenada {
+    list-style-type: decimal; /* Define o tipo de contador (pode ser 'decimal', 'lower-alpha', etc.) */
+    margin-left: 20px; /* Espaço à esquerda para os números */
+}
+
+.lista-ordenada li {
+    margin: 5px 0; /* Espaçamento vertical entre os itens da lista */
+}
+
+#footer p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
