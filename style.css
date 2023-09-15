@@ -17,24 +17,50 @@ body{
 h1, h2{
     text-align: center;
 }
+h1{
+    font-size: 45px;
+    background-color: var(--dark-blue);
+}
 
 h2{
+    padding-top: 2%;
+    font-size: 35px;
     margin-bottom: 5%;
+}
+
+h3{
+    border-style: solid;
+    font-size: 20px;
+}
+
+#explainPersonalDate{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-style: italic;
+    font-size: 15px;
 }
 
 p{
     text-align: justify;
 }
 
-#sections{
+.sections{
     padding-left: 10%;
     padding-right: 10%;
 }
 
-#sections p{
+.sections p{
     text-align: justify;
+    font-size: 18px;
 }
 
+.section{
+    padding-top: 2.5%;
+}
+
+.section:last-child{
+    padding-bottom: 3%;
+}
 .lista-ordenada {
     list-style-type: decimal; /* Define o tipo de contador (pode ser 'decimal', 'lower-alpha', etc.) */
     margin-left: 20px; /* Espaço à esquerda para os números */
@@ -44,9 +70,44 @@ p{
     margin: 5px 0; /* Espaçamento vertical entre os itens da lista */
 }
 
+#footer{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--dark-blue);
+}
 #footer p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 18px;
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+    h3{
+        border-style: solid;
+        font-size: 18px;
+    }
+    .section:first-child{
+        padding-top: 10%;
+    }
+    .section{
+        padding-top: 5%;
+    }
+    .sections p{
+        padding-top: 2.5%;
+        font-size: 15px;
+    }
+    #footer p{
+        font-size: 15px;
+    }
 }
 
 
