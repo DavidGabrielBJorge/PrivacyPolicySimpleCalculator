@@ -61,12 +61,12 @@ p{
 .section:last-child{
     padding-bottom: 3%;
 }
-.lista-ordenada {
+.ordered-list {
     list-style-type: decimal; /* Define o tipo de contador (pode ser 'decimal', 'lower-alpha', etc.) */
     margin-left: 20px; /* Espaço à esquerda para os números */
 }
 
-.lista-ordenada li {
+.ordered-list li {
     margin: 5px 0; /* Espaçamento vertical entre os itens da lista */
 }
 
