@@ -18,26 +18,31 @@ h1, h2{
     text-align: center;
 }
 h1{
-    font-size: 45px;
+    font-size: 4rem;
     background-color: var(--dark-blue);
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2{
     padding-top: 2%;
-    font-size: 35px;
+    font-size: 2.5rem;
     margin-bottom: 5%;
+    text-decoration: underline;
+    
 }
 
 h3{
     border-style: solid;
-    font-size: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
 }
 
 #explainPersonalDate{
     padding-left: 10%;
     padding-right: 10%;
     font-style: italic;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 p{
@@ -51,11 +56,12 @@ p{
 
 .sections p{
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .section{
     padding-top: 2.5%;
+    
 }
 
 .section:last-child{
@@ -68,6 +74,7 @@ p{
 
 .ordered-list li {
     margin: 5px 0; /* Espaçamento vertical entre os itens da lista */
+    font-size: 1.1rem;
 }
 
 #footer{
