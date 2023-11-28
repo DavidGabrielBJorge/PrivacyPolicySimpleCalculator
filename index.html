@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/SuperSlide/superslides.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./assets/Bootstrap/bootstrap-icons.min.css">
+
     <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
     <script src="./assets/Bootstrap/bootstrap.min.js"></script>
-    
+    <script src="./assets/SuperSlide/jquery.superslides.min.js"></script>
+    <script src="./js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <main>
+        <div id="slides">
 
-    <div class="container mt-5">
-        <h1>Bem-vindo ao Meu Projeto Bootstrap</h1>
-        <p>Este é um exemplo básico usando Bootstrap.</p>
+            <div class="overlay-slides">
+                <div class="slides-container">
+                    <img src="./assets/images/test_1.jpg" alt="">
+                    <img src="./assets/images/test_2.jpg" alt="">
+                </div>
+            </div>
+            <nav class="slides-navigation">
+                <a href="#" class="next"><i class="bi bi-arrow-right arrow-icon"></i></a>
+                <a href="#" class="prev"><i class="bi bi-arrow-left arrow-icon"></i></a>
+            </nav>
+            
+        </div>
+        
 
-        <button type="button" class="btn btn-primary">Botão Bootstrap</button>
-    </div>
+        
+    </main>
+
+
+
+
 </body>
 </html>
