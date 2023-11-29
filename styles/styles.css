@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
 .overlay-slides{
     width: 100%;
     height: 100%;
@@ -65,10 +72,45 @@
 #about-name{
     font-size: 25px;
     font-weight: 600;
+    text-align: left;
 }
 
 .about-style-text{
     text-align: justify;
+}
 
+.skills-section{
+    background-color: burlywood;
+    color: #fff;
+}
+
+.skill{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .skill-percentage{
+    color: black;
+    line-height: 150px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .skill-percentage:after{
+    content:'%';
 }
 

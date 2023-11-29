@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="./assets/SuperSlide/superslides.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./assets/Bootstrap/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
     <script src="./assets/Bootstrap/bootstrap.min.js"></script>
     <script src="./assets/SuperSlide/jquery.superslides.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.easypiechart.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -38,7 +41,8 @@
             
         </div>
         
-        <div id="about" class="about-text">
+        <div id="about" class="about-text section">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
@@ -56,9 +60,55 @@
                 </div>
             </div>
 
-            
-
         </div>
+
+        <div id="skills" class="skills-section section">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Ferramentas conhecidas</h2>
+                        <p>Representação da minha proeficiência em algumas habilidades</p>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart" data-percent="60" data-scale-color="#ffb400">
+                                <span class="skill-percentage">80</span>
+                                <canvas height="150" width="150"></canvas>
+                            </span>
+                            <h4>HTML</h4>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="60" data-scale-color="#ffb400">
+                                <span class="skill-percentage">60</span>
+                                <canvas height="150" width="150"></canvas>
+                            </span>
+                            <h4>CSS</h4>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="60" data-scale-color="#ffb400">
+                                <span class="skill-percentage">70</span>
+                                <canvas height="150" width="150"></canvas>
+                            </span>
+                            <h4>JavaScript</h4>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="60" data-scale-color="#ffb400">
+                                <span class="skill-percentage">50</span>
+                                <canvas height="150" width="150"></canvas>
+                            </span>
+                            <h4>SQL</h4>
+                        </div>
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+
         
     </main>
 
