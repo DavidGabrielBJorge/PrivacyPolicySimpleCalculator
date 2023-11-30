@@ -113,6 +113,51 @@ body{
 .chart .skill-percentage:after{
     content:'%';
 }
+/*Coisas que foram feitas*/
+.square-item{
+    margin-top: 30%;
+    position: relative;
+}
+
+.square-container{
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444;
+    border-top: none;
+}
+/*Como colocar os dois traços no topo junto com o ícone*/
+.square-container:before,
+.square-container:after
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444;
+}
+
+.square-container:before{
+    right: 0px;
+}
+
+.square-container:after{
+    left: 0px;
+}
+
+.square-text h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color:burlywood;
+}
+
+.square-text h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
 
 .contact-button{
     padding: 15px 20px;
