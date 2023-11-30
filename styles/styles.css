@@ -79,7 +79,7 @@ body{
     text-align: justify;
 }
 
-.skills-section{
+.skills-section, .contact-section{
     background-color: burlywood;
     color: #fff;
 }
@@ -112,5 +112,50 @@ body{
 
 .chart .skill-percentage:after{
     content:'%';
+}
+
+.contact-button{
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border:1px solid #fff;
+    border-radius: 2px;
+    width: 15%;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-icon {
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact-button:hover{
+    color: #fff;
+    text-decoration: none;
+    border:1px solid #fff;
+    transform: scale(1.1);
+}
+
+/*Celular*/
+@media only screen and (max-width: 600px) {
+
+    .linkedin-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-button{
+        width: 15%;
+        padding: 10px 20px;
+        
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
 }
 
