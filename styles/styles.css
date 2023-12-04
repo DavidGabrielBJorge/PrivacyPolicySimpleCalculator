@@ -194,6 +194,36 @@ body{
     transform: scale(1.1);
 }
 
+/*Portfolio*/
+.filter-portfolio{
+    text-align: center;
+    width: 100%;
+}
+
+.section .title-portifolio{
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
+
+}
+.filter-portfolio a{
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px 20px;
+    display: block;
+}
+
+.filter-portfolio li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter-portfolio .current{
+    background-color: aqua;
+    border-color: blanchedalmond;
+    color: #444;
+}
+
 /*Celular*/
 @media only screen and (max-width: 600px) {
 

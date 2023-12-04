@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./assets/Bootstrap/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./styles/owl.carousel.min.css">
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
 
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./assets/jQuery/jquery-3.7.1.min.js"></script>
     <script src="./assets/Bootstrap/bootstrap.min.js"></script>
     <script src="./assets/SuperSlide/jquery.superslides.min.js"></script>
@@ -18,6 +20,8 @@
     <script src="./js/jquery.easypiechart.min.js"></script>
     <script src="./js/countUp-jquery.js"></script>
     <script src="./js/countUp.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -195,11 +199,52 @@
 
         </div>
 
+        <div id="portfolio" class="section">
+
+            <div class="container">
+                <div class="row">
+                    <div class="title-portifolio">
+                        <h2>PORTÓLIO</h2>
+                    </div>
+
+                    <div class="filter-portfolio">
+                        <ul id="filters">
+                            <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                            <li><a href="#" data-filter=".books">Livros</a></li>
+                            <li><a href="#" data-filter=".system">Sistemas</a></li>
+                            <li><a href="#" data-filter=".sites">Sites</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="items-portolio">
+                        <ul class="items">
+                            <li class="books col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="./assets/Portfolio/Thumbnails/dog-square.jpeg">
+
+                                    <div class="icons">
+                                        <a href="./assets/Portfolio/Content/dog.jpeg" title="View Image" class="open-project" data-fancybox data-caption="teste"><i class="bi bi-github"></i></a>
+                                        <a href="" target="_blank" class="project-link"><i class="bi bi-globe2"></i></a>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+    
+                </div>
+            </div>
+
+        </div>
+
         
     </main>
 
 
 
-
+    
 </body>
 </html>
