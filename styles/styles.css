@@ -224,6 +224,100 @@ body{
     color: #444;
 }
 
+.items li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.itens-portolio{
+    width: 100%;
+}
+
+.items li img{
+    width: 100%;
+}
+
+.items .items{
+    position: relative;
+    display:block;
+    overflow: hidden;
+}
+
+.items .icons{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -10px auto 0 -47px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i{
+    color: white;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.items a{
+    width: 40px;
+    height: 35px;
+    background-color: burlywood;
+    position: relative;
+    display: inline-block;
+}
+
+.items .image-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.items .item:hover .image-overlay{
+    opacity: 1;
+
+}
+
+.items .open-project{
+    float: left;
+    opacity: 0;
+    left: -200px;
+    transition: 1.5s;
+}
+
+.items .project-link{
+    float: right;
+    opacity: 0;
+    right: -200px;
+    transition: 1.5s;
+}
+
+.items .item:hover .open-project{
+    left: 0px;
+    opacity: 1;
+
+}
+
+.items .item:hover .project-link{
+    right: 0px;
+    opacity: 1;
+}
+
+.items .item:hover img{
+    transform: scale(1.05);
+    transition: 1.3s;
+}
+.items{
+    padding: 0;
+}
+
+
 /*Celular*/
 @media only screen and (max-width: 600px) {
 
@@ -240,6 +334,10 @@ body{
         padding: 10px 20px;
         
     }
+
+    
+
+    
 }
 
 /*Tablet*/

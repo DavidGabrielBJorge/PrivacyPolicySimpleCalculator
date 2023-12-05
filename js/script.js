@@ -86,10 +86,39 @@ $(document).ready(function(){
         }
     });
 
+    //Chamar o fancybox na aplicação
     $("[data-fancybox]").fancybox();
 
+    $(".items").isotope({
+        filter:'*',//Ao caregar vai direto para a opção de mostrar todos os itens
+        animationOptions:{
+            duration:1200,
+            easing: 'linear',
+            queue: false
+        }
+    });
+    
+    //Seleciona o id filters com a tag a
+    $("#filters a").click(function(){
+        $("#filters .current").removeClass("current");//Procura o elemento current e elimina a classe current dele
+        $(this).addClass("current");//Vai pegar o elemento que foi clicado e adicionar a classe current
+
+        var selector = $(this).attr("data-filter");//Vai pegar o valor do atributo do data-filter
+
+        $(".items").isotope({
+            filter:selector,//Vai mostrar os itens do seletor selecionado
+            animationOptions:{
+                duration:1500,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        return false;//Deve colocar false para parar qualquer operação e voltar ao estado padrão
+    });
 
     
+
+
 
     
 
