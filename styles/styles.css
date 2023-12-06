@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-size: 14px;
     color: #333;
@@ -287,25 +288,21 @@ body{
 .items .open-project{
     float: left;
     opacity: 0;
-    left: -200px;
     transition: 1.5s;
 }
 
 .items .project-link{
     float: right;
     opacity: 0;
-    right: -200px;
     transition: 1.5s;
 }
 
 .items .item:hover .open-project{
-    left: 0px;
     opacity: 1;
 
 }
 
 .items .item:hover .project-link{
-    right: 0px;
     opacity: 1;
 }
 
@@ -315,6 +312,17 @@ body{
 }
 .items{
     padding: 0;
+}
+
+.footer-section{
+    background-color: burlywood;
+    color: #333;
+    padding: 30px 5px;
+}
+
+.footer-section{
+    margin: 0;
+
 }
 
 
