@@ -325,6 +325,41 @@ body{
 
 }
 
+/*Navbar*/
+
+#navigation{
+    background-color: burlywood;
+    padding: 15px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #333;
+}
+
+.fixedNav #navigation{
+    position: fixed;
+    top: 0;
+}
+
+.navbar-brand{
+    color: #333;
+}
+
+.navbar-brand, .navbar-brand:hover{
+    color: #333;
+}
+
+.bi-lis{
+    font-size: 30px;
+    color: #333;
+}
+
 
 /*Celular*/
 @media only screen and (max-width: 600px) {

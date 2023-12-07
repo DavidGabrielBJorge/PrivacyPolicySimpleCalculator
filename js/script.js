@@ -116,7 +116,39 @@ $(document).ready(function(){
         return false;//Deve colocar false para parar qualquer operação e voltar ao estado padrão
     });
 
-    
+    $("#navigation li a").click(function(e){
+        e.preventDefault();//Previne o evento de acontecer
+
+        var targetElement = $(this).attr("href");//Vai pegar o atributo do elemento clicado
+        var targetPosition = $(targetElement).offset().top;//Vai pegar o id do elemento, por exemplo se o href for "about" o position será $about
+
+        $("html, body").animate({ scrollTop: targetPosition- 50}, "slow")
+        /*Vai selecionar tanto o html quanto o body, depois vai fazer uma animação de scroll até o elemto específico de forma lenta até chegar na posição do alvo ajustando 50px */
+    });
+
+    //Lógica para o navbar fixar no topo da página 
+    const nav = $("#navigation");
+    const navTop = nav.offset().top;//Vai pegar a posição top da nav
+
+    $(window).on("scroll", stickyNavbar)//Ao usar o scroll no window vai chamar a função stickyNavbar
+
+    function stickyNavbar(){
+        const body = $("body");
+        //Caso ao usar o scroll passe o topo na navegação de fixar a navbar, se for menor deve retirar a classe
+        if($(window).scrollTop()>=navTop){
+
+            body.css("padding-top", nav.outerHeight()+"px");//Está ajustando o padding-top do elemento nav, o nav.outerHeight() recupera a altura externa do nav, como seu resultado é uma string deve acrescentar o px para coverter para unidade
+            /*Para fazer com que a troca do navbar seja sutil quando é fixo, é preciso adicionar no local onde ele ficava o padding, dessa forma o site não precisa se apropriar de forma abrupta quando o navbar sai do lugar*/
+            body.addClass("fixedNav");
+        }else{
+            body.css("padding-top", 0);
+            body.removeClass("fixedNav");
+        }
+    }
+
+
+
+
 
 
 
