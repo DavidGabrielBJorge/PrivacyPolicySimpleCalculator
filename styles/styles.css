@@ -360,6 +360,25 @@ body{
     color: #333;
 }
 
+.loading{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .inner{
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/spinner.gif) center center no-repeat;
+}
+
 
 /*Celular*/
 @media only screen and (max-width: 600px) {

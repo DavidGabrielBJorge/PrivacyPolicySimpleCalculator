@@ -1,3 +1,22 @@
+//Lógica para fazer aparecer e desaparecer a tela de carregamento
+$(window).on("load",function(){//quando a janela carregar deve fazer a seguinte função
+    $(".loading .inner").fadeOut(500, function(){//Dentro do elemento com a classe "loading", encontre o elemento com a classe "inner" e faça-o desaparecer em 500 milissegundos. Quando a animação de desaparecimento estiver concluída, execute a função a seguir:
+        $(".loading").fadeOut(750);// Faça o elemento com a classe "loading" desaparecer em 750 milissegundos.
+    });
+
+    $(".items").isotope({
+        filter:'*',//Ao caregar vai direto para a opção de mostrar todos os itens
+        animationOptions:{
+            duration:1200,
+            easing: 'linear',
+            queue: false
+        }
+    });
+});
+
+
+
+
 //Ao inicializar a página os seguintes itens devem ser carregados
 $(document).ready(function(){
     //Carregar o super silde
@@ -89,14 +108,7 @@ $(document).ready(function(){
     //Chamar o fancybox na aplicação
     $("[data-fancybox]").fancybox();
 
-    $(".items").isotope({
-        filter:'*',//Ao caregar vai direto para a opção de mostrar todos os itens
-        animationOptions:{
-            duration:1200,
-            easing: 'linear',
-            queue: false
-        }
-    });
+    
     
     //Seleciona o id filters com a tag a
     $("#filters a").click(function(){
