@@ -85,7 +85,8 @@ $(document).ready(function(){
                 easing: 'easeInOut',
                 barColor: '#050a0e',
                 trackColor: '#fff',
-                scaleColor: false,
+                scaleColor: '#dfe0e0',
+                lineCap: 'round',
                 size:150,
                 onStep: function(from, to, percent){//Ao carregar a página vai de 0 até o valo da porcentagem correta
                     $(this.element).find('.skill-percentage').text(Math.round(percent));

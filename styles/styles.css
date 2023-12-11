@@ -243,9 +243,9 @@ body{
 }
 
 .filter-portfolio .current{
-    background-color: aqua;
-    border-color: blanchedalmond;
-    color: #444;
+    background-color: var(--primary-color);
+    border-color:   var(--text-color);
+    color: var(--text-color);
 }
 
 .items li{
