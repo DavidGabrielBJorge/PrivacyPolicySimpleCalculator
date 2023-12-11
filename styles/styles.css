@@ -169,12 +169,12 @@ body{
     margin-left: -20%;
     color: #444;
 }
-
+/*Contato*/
 .contact-section {
     margin-top: 30px;
 }
 .contact-button{
-    padding: 15px 20px;
+    padding: 15px 30px;
     display: inline-block;
     margin-top: 20px;
     border:1px solid #fff;
@@ -183,7 +183,23 @@ body{
     transition: transform 0.3s ease;
 }
 
+.linkedin-button{
+    color: #0e76a8;
+}
+
+.github-button{
+    color: #333;
+}
+
+.contact-icon{
+    padding-bottom: 10px;
+}
 .linkedin-icon {
+    font-size: 40px;
+    text-align: center;
+}
+
+.github-icon{
     font-size: 40px;
     text-align: center;
 }
@@ -383,18 +399,29 @@ body{
 /*Celular*/
 @media only screen and (max-width: 600px) {
 
+    .contact-section {
+        margin-top: 30px;
+    }
+
     .linkedin-icon {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 25px;
+        font-size: 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    .github-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
         transition: background-color 0.3s ease;
     }
 
     .contact-button{
         width: 15%;
         padding: 10px 20px;
-        
     }
 
     
