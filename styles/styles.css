@@ -1,3 +1,10 @@
+:root{
+    --primary-color:#7899D4;
+    --linkedin-color: #0e76a8; 
+    --github-color: #333;
+    --text-color: #2E2E3A; 
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +14,7 @@
 
 body{
     font-size: 14px;
-    color: #333;
+    color: var(--text-color);
     background-color: #fff;
     letter-spacing: 1px;
 }
@@ -81,7 +88,7 @@ body{
 }
 
 .skills-section, .contact-section{
-    background-color: burlywood;
+    background-color: var(--primary-color);
     color: #fff;
 }
 
@@ -150,7 +157,7 @@ body{
     font-size: 55px;
     margin-bottom: 10px;
     font-weight: 400;
-    color:burlywood;
+    color:var(--primary-color);
 }
 
 .square-text h3{
@@ -184,11 +191,11 @@ body{
 }
 
 .linkedin-button{
-    color: #0e76a8;
+    color: var(--linkedin-color);
 }
 
 .github-button{
-    color: #333;
+    color: var(--github-color);
 }
 
 .contact-icon{
@@ -280,7 +287,7 @@ body{
 .items a{
     width: 40px;
     height: 35px;
-    background-color: burlywood;
+    background-color: var(--primary-color);
     position: relative;
     display: inline-block;
 }
@@ -331,7 +338,7 @@ body{
 }
 
 .footer-section{
-    background-color: burlywood;
+    background-color: var(--primary-color);
     color: #333;
     padding: 30px 5px;
 }
@@ -344,7 +351,7 @@ body{
 /*Navbar*/
 
 #navigation{
-    background-color: burlywood;
+    background-color: var(--primary-color);
     padding: 15px 10px;
     z-index: 100;
     width: 100%;
@@ -399,6 +406,13 @@ body{
 /*Celular*/
 @media only screen and (max-width: 600px) {
 
+    .slides-navigation {
+
+        padding-top: 5rem;
+      }
+    .arrow-icon{
+        font-size: 30px;
+    }
     .contact-section {
         margin-top: 30px;
     }

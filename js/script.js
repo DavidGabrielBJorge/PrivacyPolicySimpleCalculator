@@ -83,7 +83,8 @@ $(document).ready(function(){
         if(window.pageYOffset > skillsDontAppear - $(window).height()+200){//Adciona os 200 como delay
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
-                barColor: '#333',
+                barColor: '#050a0e',
+                trackColor: '#fff',
                 scaleColor: false,
                 size:150,
                 onStep: function(from, to, percent){//Ao carregar a página vai de 0 até o valo da porcentagem correta
