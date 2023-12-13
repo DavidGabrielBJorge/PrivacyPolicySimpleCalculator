@@ -340,13 +340,10 @@ body{
 .footer-section{
     background-color: var(--primary-color);
     color: #333;
-    padding: 30px 5px;
 }
 
-.footer-section{
-    margin: 0;
 
-}
+
 
 /*Navbar*/
 
