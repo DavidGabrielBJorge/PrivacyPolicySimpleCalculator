@@ -1,8 +1,9 @@
 :root{
-    --primary-color:#7899D4;
+    --primary-color:#5E6472;
     --linkedin-color: #0e76a8; 
     --github-color: #333;
     --text-color: #2E2E3A; 
+    --text-color-secondary: #fff;
 }
 
 *{
@@ -15,7 +16,7 @@
 body{
     font-size: 14px;
     color: var(--text-color);
-    background-color: #fff;
+    background-color: #DAD7CD;
     letter-spacing: 1px;
 }
 
@@ -78,13 +79,14 @@ body{
 }
 
 #about-name{
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 600;
     text-align: left;
 }
 
 .about-style-text{
     text-align: justify;
+    font-size: 1.2rem;
 }
 
 .skills-section, .contact-section{
@@ -95,6 +97,10 @@ body{
 .skill{
     text-align: center;
     margin-left: 10px;
+}
+
+.text-skill{
+    font-size: 1.2rem;
 }
 
 .chart{
@@ -120,6 +126,11 @@ body{
 
 .chart .skill-percentage:after{
     content:'%';
+}
+
+.owl-nav{
+    text-align: center;
+    font-size: 3rem;
 }
 /*Coisas que foram feitas*/
 .square-item{
@@ -245,7 +256,7 @@ body{
 .filter-portfolio .current{
     background-color: var(--primary-color);
     border-color:   var(--text-color);
-    color: var(--text-color);
+    color: #fff;
 }
 
 .items li{
@@ -339,12 +350,11 @@ body{
 
 .footer-section{
     background-color: var(--primary-color);
-    color: #333;
+    color: var(--text-color-secondary);
 }
 .footer-text{
     text-align: justify;
 }
-
 
 
 
@@ -362,7 +372,12 @@ body{
 }
 
 #navigation li a {
-    color: #333;
+    color: var(--text-color-secondary);
+    font-size: 1.3rem;
+}
+
+#navigation li a:hover {
+    text-decoration: underline;
 }
 
 .fixedNav #navigation{
@@ -371,11 +386,12 @@ body{
 }
 
 .navbar-brand{
-    color: #333;
+    color: var(--text-color-secondary);
+    font-size: 1.5rem;
 }
 
 .navbar-brand, .navbar-brand:hover{
-    color: #333;
+    color: var(--text-color-secondary);
 }
 
 .bi-lis{
@@ -408,7 +424,12 @@ body{
 
     .slides-navigation {
         padding-top: 5rem;
-      }
+    }
+
+
+    #about-name{
+        font-size: 1.7rem;
+    }
     .arrow-icon{
         font-size: 30px;
     }

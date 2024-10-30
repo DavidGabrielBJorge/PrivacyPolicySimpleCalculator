@@ -38,6 +38,9 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop:true,
         items:4,
+        center:true,
+        margin:10,
+        nav:true,
         responsive:{
             0:{
                 items:1
