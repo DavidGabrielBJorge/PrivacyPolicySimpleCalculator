@@ -1,8 +1,9 @@
 :root{
-    --primary-color:#5E6472;
+    --primary-color:#560090;
+    --secondary-color:#231F20;
     --linkedin-color: #0e76a8; 
     --github-color: #333;
-    --text-color: #2E2E3A; 
+    --text-color: #F9F5FF; 
     --text-color-secondary: #fff;
 }
 
@@ -16,8 +17,12 @@
 body{
     font-size: 14px;
     color: var(--text-color);
-    background-color: #DAD7CD;
+    background-color: var(--secondary-color);
     letter-spacing: 1px;
+}
+
+#slides {
+    height: 600px !important;
 }
 
 .overlay-slides{
@@ -142,7 +147,7 @@ body{
     position: relative;
     padding: 50px 15px 35px;
     text-align: center;
-    border: 2px solid #444;
+    border: 2px solid var(--primary-color);
     border-top: none;
 }
 /*Como colocar os dois traços no topo junto com o ícone*/
@@ -153,7 +158,7 @@ body{
     position: absolute;
     top: 0px;
     width: 30%;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .square-container:before{
@@ -168,7 +173,7 @@ body{
     font-size: 55px;
     margin-bottom: 10px;
     font-weight: 400;
-    color:var(--primary-color);
+    color:var(--text-color);
 }
 
 .square-text h3{
@@ -185,7 +190,7 @@ body{
     height: 60px;
     font-size: 35px;
     margin-left: -20%;
-    color: #444;
+    color: var(--primary-color);
 }
 /*Contato*/
 .contact-section {

@@ -57,6 +57,8 @@ $(document).ready(function(){
         }
     })
 
+    
+
     //Carregar o Pie Chart
     /*
     $(function() {
@@ -71,6 +73,8 @@ $(document).ready(function(){
         });
     });
 */
+
+
     var skillsDontAppear = $(".skills-section").offset().top;//Captura a posição vertical da distância do topo do elemto da classe 'skills-section', dessa forma pode realizar alguma ação quando o usuário rolar para essa posição na página
     
     //Deve mostrar os valores trocando de número quando chega na parte dos status
