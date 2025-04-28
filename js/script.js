@@ -90,11 +90,16 @@ $(document).ready(function(){
         if(window.pageYOffset > skillsDontAppear - $(window).height()+200){//Adciona os 200 como delay
             $('.chart').easyPieChart({
                 easing: 'easeInOut',
-                barColor: '#050a0e',
+                barColor: '#231F20',
                 trackColor: '#fff',
-                scaleColor: '#dfe0e0',
+                scaleColor: false,
+                scaleLength: 0,
                 lineCap: 'round',
                 size:150,
+                animate: {
+                    duration: 2000,   // Duração de 2 segundos
+                    enabled: true     // Ativa a animação
+                },
                 onStep: function(from, to, percent){//Ao carregar a página vai de 0 até o valo da porcentagem correta
                     $(this.element).find('.skill-percentage').text(Math.round(percent));
                 }
