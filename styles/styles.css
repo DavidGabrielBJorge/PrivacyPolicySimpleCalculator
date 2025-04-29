@@ -170,6 +170,22 @@ body{
   .right::after {
     left: -16px;
   }
+
+  .header-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header-timeline h2 {
+    margin: 0;
+  }
+  
+  .header-timeline img {
+    width: 70px; 
+    height: auto;
+  }
   
   .content-timeline {
     color: var(--secondary-color);
@@ -180,9 +196,6 @@ body{
     border-radius: 6px;
   }
 
-  .content-timeline img{
-    width: 70px;
-  }
   
 
 /*==============================Tópico skills==============================*/
