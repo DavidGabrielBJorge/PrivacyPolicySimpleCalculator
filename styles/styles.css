@@ -99,13 +99,14 @@ body{
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    
   }
 
   .timeline::after {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: var(--primary-color);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -125,7 +126,7 @@ body{
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -12px;
+    right: -12.49px;
     background-color: white;
     border: 4px solid var(--primary-color);
     top: 15px;
@@ -168,7 +169,7 @@ body{
   }
   
   .right::after {
-    left: -12px;
+    left: -12.5px;
   }
 
   .header-timeline {
@@ -195,6 +196,19 @@ body{
     position: relative;
     border-radius: 6px;
   }
+
+
+  .container-timeline {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .container-timeline.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
   /*animação*/
   .timeline::after {
@@ -382,7 +396,7 @@ body{
 
 }
 .filter-portfolio a{
-    color: #333;
+    color: var(--text-color);
     border: 1px solid #333;
     padding: 10px 20px;
     display: block;
@@ -595,7 +609,7 @@ body{
     }
       
     .left::after, .right::after {
-        left: 15px;
+        left: 17.5px;
     }
         
     .right {

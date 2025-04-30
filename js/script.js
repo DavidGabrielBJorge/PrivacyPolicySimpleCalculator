@@ -75,6 +75,19 @@ $(document).ready(function(){
 */
 
 
+    //Faz os blocos da timeline aparecerem suavemente na tela conforme o usuário rola a página
+    const containers = document.querySelectorAll('.container-timeline');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+    containers.forEach(container => observer.observe(container));
+
+
     var skillsDontAppear = $(".skills-section").offset().top;//Captura a posição vertical da distância do topo do elemto da classe 'skills-section', dessa forma pode realizar alguma ação quando o usuário rolar para essa posição na página
     
     //Deve mostrar os valores trocando de número quando chega na parte dos status
