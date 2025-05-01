@@ -79,7 +79,11 @@ body{
 /*==============================Tópico sobre==============================*/
 .about-text{
     padding: 100px 0 100px 0;
+
 }
+
+
+
 .about-image{
     max-width: 100%;
 }
@@ -151,7 +155,7 @@ body{
     z-index: 1;
     right: 30px;
     border: medium solid white;
-    border-width: 10px 0 10px 10px;
+    border-width: 20px 0 20px 20px;
     border-color: transparent transparent transparent white;
   }
 
@@ -164,7 +168,7 @@ body{
     z-index: 1;
     left: 30px;
     border: medium solid white;
-    border-width: 10px 10px 10px 0;
+    border-width: 20px 20px 20px 0;
     border-color: transparent white transparent transparent;
   }
   
@@ -607,9 +611,14 @@ body{
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
     }
-      
+
+    .container-timeline::after {
+        width: 25px;
+        height: 25px;
+      }
+
     .left::after, .right::after {
-        left: 17.5px;
+        left: 18.7px;
     }
         
     .right {

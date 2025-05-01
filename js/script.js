@@ -19,6 +19,10 @@ $(window).on("load",function(){//quando a janela carregar deve fazer a seguinte 
 
 //Ao inicializar a página os seguintes itens devem ser carregados
 $(document).ready(function(){
+
+    AOS.init();
+
+    
     //Carregar o super silde
     $('#slides').superslides({
         animation: 'slide',
