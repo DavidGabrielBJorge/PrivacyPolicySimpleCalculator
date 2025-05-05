@@ -14,9 +14,6 @@ $(window).on("load",function(){//quando a janela carregar deve fazer a seguinte 
     });
 });
 
-
-
-
 //Ao inicializar a página os seguintes itens devem ser carregados
 $(document).ready(function(){
 
@@ -61,34 +58,21 @@ $(document).ready(function(){
         }
     })
 
-    
-
-    //Carregar o Pie Chart
-    /*
-    $(function() {
-        $('.chart').easyPieChart({
-            easing: 'easeInOut',
-            barColor: '#333',
-            scaleColor: false,
-            size:150,
-            onStep: function(from, to, percent){//Ao carregar a página vai de 0 até o valo da porcentagem correta
-                $(this.element).find('.skill-percentage').text(Math.round(percent));
-            }
-        });
-    });
-*/
-
-
     //Faz os blocos da timeline aparecerem suavemente na tela conforme o usuário rola a página
+
+    //Seleciona todos os elementos do DOM que possuem a classe .container-timeline e armazena em uma lista chamada containers.
     const containers = document.querySelectorAll('.container-timeline');
 
+    //Cria um novo observador (usando IntersectionObserver) que "vigia" os elementos da lista. O segundo argumento { threshold: 0.1 } significa que o callback será disparado quando 10% do elemento estiver visível na tela.
         const observer = new IntersectionObserver(entries => {
+            //Para cada elemento observado (entry), verifica se ele está intersectando com a viewport ou seja, visível na tela.
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
                 }
             });
         }, { threshold: 0.1 });
+    //Faz com que cada .container-timeline seja observado. Isso conecta todos os elementos selecionados ao IntersectionObserver.
     containers.forEach(container => observer.observe(container));
 
 
